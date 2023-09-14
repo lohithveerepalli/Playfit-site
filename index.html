@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playfit - Find Your Game, Anytime, Anywhere</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Playfit</h1>
+    <p>Your ultimate playground finder</p>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="feature">
+      <h3>Find Games Nearby</h3>
+      <p>Quickly find games happening around you.</p>
+    </div>
+    <div class="feature">
+      <h3>Post Your Game</h3>
+      <p>Hosting a game? Post it on Playfit and invite others to join.</p>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map-section">
+    <h2>Game Locations</h2>
+    <div id="map"></div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" id="name">
+      <input type="email" placeholder="Your Email" id="email">
+      <textarea placeholder="Your Message" id="message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Include Google Maps JS API -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <script src="script.js"></script>
+</body>
+</html>
